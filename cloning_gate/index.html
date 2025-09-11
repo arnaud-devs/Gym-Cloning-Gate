@@ -122,20 +122,21 @@
           <button type="button" class="filter__toggle flex items-center gap-3">
             <span class="filter__toggle__text "> Topics
             </span>
-             <svg class="w-[18px] h-[10px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                  <path
-                    d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
-                </svg>
+            <svg class="w-[18px] h-[10px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+            </svg>
           </button>
           <ul class="" role="list">
             <li class="filter__item hidden">
-              <button type="button" class="">Featured</button></li>
+              <button type="button" class="">Featured</button>
+            </li>
 
             <li class=" hidden">
-              <button type="button" class="filter__trigger" >Arts &amp; Humanities</button>
+              <button type="button" class="filter__trigger">Arts &amp; Humanities</button>
             </li>
             <li class="hidden">
-            <button type="button" class="filter__trigger" >Natural Sciences</button>
+              <button type="button" class="filter__trigger">Natural Sciences</button>
             </li>
 
             <li class="filter__item hidden">
@@ -165,7 +166,7 @@
         <div class="news-featured__featured cols-span-2">
           <article class="article-card article-card--featured text-center ">
             <picture class="">
-              <img 
+              <img
                 src="https://penntoday.upenn.edu/sites/default/files/styles/hero/public/2025-09/alzheimers-pollution-teaser_0.jpg?h=4997dc06&amp;itok=Ar97indO"
                 alt="Emissions from a power plant." class="article-card__image">
             </picture>
@@ -187,8 +188,7 @@
                 srcset="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-08/Penn%20White%20Coat-2025-Ceremony__1204.jpg?h=1116cd87&amp;itok=vyo7SHte"
                 media="(min-width: 768px)">
               <img srcset="/themes/custom/penn_global/assets/img/transparent.png"
-                src="/themes/custom/penn_global/assets/img/transparent.png"
-                class="article-card__image hidden md:flex">
+                src="/themes/custom/penn_global/assets/img/transparent.png" class="article-card__image hidden md:flex">
             </picture>
             <a href="https://penntoday.upenn.edu/topic/health-and-medicine" class="text-sm text-[#990000]">Health &amp;
               Medicine</a>
@@ -226,8 +226,7 @@
             <a href="https://penntoday.upenn.edu/topic/natural-sciences" class="text-sm text-[#990000]">Natural
               Sciences</a>
             <h3 class="article-card__title">
-              <a href=""
-                class="text-[#011F5B]">
+              <a href="" class="text-[#011F5B]">
                 Charles Kane to receive Lorentz Medal
               </a>
             </h3>
@@ -263,6 +262,45 @@
 
       </div>
     </section>
+
+
+    <!--featured-story-->
+
+    <div class="featured-story featured-story--left min-h-[100vh]  relative">
+      <picture>
+        <img
+          src="./src/assets/images/padl-lab-technician_1.png"
+          class="featured-story__image w-full object-cover h-[100vh]">
+      </picture>
+      <div class="featured-story__contain absolute md:top-[30%] top-[70%] left-[20%] md:left-[2%] w-[60%] md:w-[40%] px-[20px] py-[10px] bg-blue-950 flex">
+        <article class="featured-initiative-card featured-initiative-card--blue text-white border my-[10px] mx-[10px] ">
+          <div class="featured-initiative-card__wrap flex  flex-col items-center gap-4">
+            <h3 class="featured-initiative-card__category"> Health &amp; Medicine
+            </h3>
+
+            <h2 class="featured-initiative-card__title flex">
+
+              <a href="" class=" text-[34px]">
+                Keeping food safe and animals healthy
+              </a>
+            </h2>
+
+
+            <div class="text-[17px] w-[80%]">
+              <p>As part of the Pennsylvania Animal Diagnostic Laboratory System (PADLS), Penn Vet’s New Bolton Center
+                helps to protect animals and humans from health threats and minimize agricultural economic loss.</p>
+
+            </div>
+
+            <a href=""
+              class="btn btn--outline-white-secondary p-[25px] rounded-lg border">LEARN MORE</a>
+
+          </div>
+        </article>
+
+
+      </div>
+    </div>
 
   </main>
 </body>
