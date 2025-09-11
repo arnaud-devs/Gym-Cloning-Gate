@@ -19,22 +19,24 @@
       <div class="absolute inset-0 bg-black/50"></div>
 
       <div class="relative z-10 h-full px-[20px]">
-        <nav class="flex items-center justify-between py-4">
-          <div>
+        <nav class="flex items-center justify-between py-4 ">
+          <svg class="flex size-[40px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+            </svg>
+          <div class="">
             <img src="./src/assets/images/UPenn-logo.svg" class="w-[200px] h-[73px]" alt="">
           </div>
 
           <div class="flex items-center gap-4">
-            <!-- Search Icon -->
-            <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <svg class="hidden md:flex size-[40px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
             </svg>
-            <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <svg class="size-[40px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
               <path
                 d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
             </svg>
-            <!-- Dropdown + Button -->
             <div class="hidden md:flex items-center gap-2">
               <select name="" id="" class="p-[15px] bg-transparent w-[130px] text-white">
                 <option value="">Resources</option>
@@ -45,8 +47,7 @@
             </div>
           </div>
         </nav>
-        <div class="h-[2px] w-full bg-gray-400"></div>
-        <!--Second Navbar-->
+        <div class="h-[1px] w-full bg-white"></div>
 
         <section class="text-white hidden md:flex justify-end w-full  z-10 mt-2  ">
           <ul class="flex">
@@ -102,11 +103,11 @@
           </ul>
         </section>
 
-        <section class="w-full flex h-[50vh] items-end ">
+        <section class="w-full flex min-h-[50vh] items-end ">
           <div class="hero__text w-[80%] ">
             <h3 class="hero__category font-bold text-base text-white"> Health &amp; Medicine</h3>
             <a href="" class="hero__link">
-              <h1 class=" font-bold md:text-5xl text-white font-serif">
+              <h1 class=" font-thin text-5xl text-white font-serif">
                 Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
               </h1>
             </a>
@@ -476,192 +477,287 @@
 
     <!--Priorities-->
     <section>
-  <div class="bg-[url(/src/assets/images/blue-pattern-bg.png)] bg-cover bg-center min-h-screen pt-[8%] relative">
-    
-    <!-- Title -->
-    <div class="flex justify-center mb-12">
-      <div class="text-center max-w-3xl">
-        <p class="text-white text-4xl font-serif mb-4">Penn Priorities</p>
-        <p class="text-gray-200 text-base">
-          A look at a few of our big picture priorities that improve Penn as we create knowledge
-          to benefit the world.
-        </p>
+      <div class="bg-[url(/src/assets/images/blue-pattern-bg.png)] bg-cover bg-center min-h-screen pt-[8%] relative">
+
+        <!-- Title -->
+        <div class="flex justify-center mb-12">
+          <div class="text-center max-w-3xl">
+            <p class="text-white text-4xl font-serif mb-4">Penn Priorities</p>
+            <p class="text-gray-200 text-base">
+              A look at a few of our big picture priorities that improve Penn as we create knowledge
+              to benefit the world.
+            </p>
+          </div>
+        </div>
+
+        <!-- Cards Wrapper -->
+
       </div>
-    </div>
+      <div>
 
-    <!-- Cards Wrapper -->
+        <div
+          class="flex gap-6 justify-center px-6 overflow-x-auto flex-wrap md:flex-nowrap -mt-[70%] md:-mt-[40%] lg:-mt-[25%]">
 
-  </div>
-  <div>
+          <!-- Priority Card -->
+          <article class="  priority-card w-full sm:w-[100%] md:w-[820px] md:h-[547px] relative flex flex-shrink-0">
+            <a href="#" class="priority-card__link block relative w-full h-full">
+              <img loading="lazy" src="./src/assets/images/P-101788-Master-V1-117.jpg"
+                class="priority-card__image w-full h-full object-cover">
+              <!-- Overlay Box -->
+              <div class="absolute bottom-0 left-0 flex w-full md:w-[50%] bg-white shadow-lg">
+                <h3 class="priority-card__title text-black p-3 md:p-4 flex-1 text-sm md:text-base">Penn Forward</h3>
+                <div class="bg-[#990000] w-12 md:w-14 flex items-center justify-center">
+                  <span class="text-white text-lg font-bold">&gt;</span>
+                </div>
+              </div>
+            </a>
+          </article>
 
-  <div class="flex gap-6 justify-center px-6 overflow-x-auto flex-wrap md:flex-nowrap -mt-[70%] md:-mt-[40%] lg:-mt-[25%]">
-      
-      <!-- Priority Card -->
-      <article class="  priority-card w-full sm:w-[100%] md:w-[820px] md:h-[547px] relative flex flex-shrink-0">
-        <a href="#" class="priority-card__link block relative w-full h-full">
-          <img 
-            loading="lazy"
-            src="./src/assets/images/P-101788-Master-V1-117.jpg"
-            class="priority-card__image w-full h-full object-cover"
-          >
-          <!-- Overlay Box -->
-          <div class="absolute bottom-0 left-0 flex w-full md:w-[50%] bg-white shadow-lg">
-            <h3 class="priority-card__title text-black p-3 md:p-4 flex-1 text-sm md:text-base">Penn Forward</h3>
-            <div class="bg-[#990000] w-12 md:w-14 flex items-center justify-center">
-              <span class="text-white text-lg font-bold">&gt;</span>
-            </div>
-          </div>
-        </a>
-      </article>
+          <!-- Repeat Cards -->
+          <article
+            class="hidden priority-card w-full sm:w-[100%] md:w-[820px] md:h-[547px] relative md:flex flex-shrink-0">
+            <a href="#" class="priority-card__link block relative w-full h-full">
+              <img loading="lazy" src="./src/assets/images/P-101788-Master-V1-117.jpg"
+                class="priority-card__image w-full h-full object-cover">
+              <div class="absolute bottom-0 left-0 flex w-full lg:w-[50%] bg-white shadow-lg">
+                <h3 class="priority-card__title text-black p-3 md:p-4 flex-1 text-sm md:text-base">In Principle &
+                  Practice</h3>
+                <div class="bg-[#990000] w-12 md:w-14 flex items-center justify-center">
+                  <span class="text-white text-lg font-bold">&gt;</span>
+                </div>
+              </div>
+            </a>
+          </article>
 
-      <!-- Repeat Cards -->
-      <article class="hidden priority-card w-full sm:w-[100%] md:w-[820px] md:h-[547px] relative md:flex flex-shrink-0">
-        <a href="#" class="priority-card__link block relative w-full h-full">
-          <img 
-            loading="lazy"
-            src="./src/assets/images/P-101788-Master-V1-117.jpg"
-            class="priority-card__image w-full h-full object-cover"
-          >
-          <div class="absolute bottom-0 left-0 flex w-full lg:w-[50%] bg-white shadow-lg">
-            <h3 class="priority-card__title text-black p-3 md:p-4 flex-1 text-sm md:text-base">In Principle & Practice</h3>
-            <div class="bg-[#990000] w-12 md:w-14 flex items-center justify-center">
-              <span class="text-white text-lg font-bold">&gt;</span>
-            </div>
-          </div>
-        </a>
-      </article>
+          <article
+            class="priority-card w-full sm:w-[100%] md:w-[820px] md:h-[547px] hidden relative md:flex flex-shrink-0">
+            <a href="#" class="priority-card__link block relative w-full h-full">
+              <img loading="lazy" src="./src/assets/images/P-101788-Master-V1-117.jpg"
+                class="priority-card__image w-full h-full object-cover">
+              <div class="absolute bottom-0 left-0 flex w-full lg:w-[50%] bg-white shadow-lg">
+                <h3 class="priority-card__title text-black p-3 md:p-4 flex-1 text-sm md:text-base">Research & Innovation
+                </h3>
+                <div class="bg-[#990000] w-12 md:w-14 flex items-center justify-center">
+                  <span class="text-white text-lg font-bold">&gt;</span>
+                </div>
+              </div>
+            </a>
+          </article>
 
-      <article class="priority-card w-full sm:w-[100%] md:w-[820px] md:h-[547px] hidden relative md:flex flex-shrink-0">
-        <a href="#" class="priority-card__link block relative w-full h-full">
-          <img 
-            loading="lazy"
-            src="./src/assets/images/P-101788-Master-V1-117.jpg"
-            class="priority-card__image w-full h-full object-cover"
-          >
-          <div class="absolute bottom-0 left-0 flex w-full lg:w-[50%] bg-white shadow-lg">
-            <h3 class="priority-card__title text-black p-3 md:p-4 flex-1 text-sm md:text-base">Research & Innovation</h3>
-            <div class="bg-[#990000] w-12 md:w-14 flex items-center justify-center">
-              <span class="text-white text-lg font-bold">&gt;</span>
-            </div>
-          </div>
-        </a>
-      </article>
-
-    </div>
-     <div class="flex w-full  gap-4 justify-center items-center z-10 md:py-10  ">
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-    </div>
-  </div>
-</section>
-<section>
- <header class="section-header section-header--centered py-[10px] text-center">
+        </div>
+        <div class="flex w-full  gap-4 justify-center items-center z-10 md:py-10  ">
+          <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+          <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+          <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+          <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+          <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <header class="section-header section-header--centered py-[10px] text-center">
         <h2 class="text-4xl text-[#011F5B]">Stay Connected</h2>
       </header>
-  <div class="social__grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-  <div class="relative group overflow-hidden aspect-square">
-    <img src="/src/assets/images/Sheer2.jpeg" 
-         alt="Sheerr Pool" 
-         class="w-full h-full object-cover">
-    <div class="absolute inset-0 bg-red-700/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center px-6 text-white">
-      <p class="mb-4">
-        Sheerr Pool at the Pottruck Center reopened this summer after a yearlong renovation. 
-        The new features and improvements have made the pool safer and more accessible. 
-        Swim lessons and other programming have now returned with the fall semester.
-      </p>
+      <div class="social__grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="relative group overflow-hidden aspect-square">
+          <img src="/src/assets/images/Sheer2.jpeg" alt="Sheerr Pool" class="w-full h-full object-cover">
+          <div
+            class="absolute inset-0 bg-red-700/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center px-6 text-white">
+            <p class="mb-4">
+              Sheerr Pool at the Pottruck Center reopened this summer after a yearlong renovation.
+              The new features and improvements have made the pool safer and more accessible.
+              Swim lessons and other programming have now returned with the fall semester.
+            </p>
 
-      <div class="flex items-center space-x-2">
-        <img src="./src/assets/images/icon-instagram.svg" alt="Instagram" class="w-5 h-5">
-        <span class="font-semibold">@UOFPENN</span>
+            <div class="flex items-center space-x-2">
+              <img src="./src/assets/images/icon-instagram.svg" alt="Instagram" class="w-5 h-5">
+              <span class="font-semibold">@UOFPENN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#011F5B] text-white p-6 flex items-center">
+          <div>
+            <p>
+              When Little Dove sat down mid-walk, her owner, Elizabeth Mauldin, a dermatopathologist at @PennVetSchool,
+              knew something was off.
+              What followed was a swift, coordinated response from a veterinary team whose skill and care gave the
+              rescue dog a second chance.
+            </p>
+            <div class="mt-4 flex items-center space-x-2">
+              <img src="./src/assets/images/icon-facebook.svg" alt="Twitter" class="w-5 h-5">
+              <span class="font-semibold">@UOFPENN</span>
+            </div>
+          </div>
+        </div>
+        <div class="relative group overflow-hidden aspect-square">
+          <img src="./src/assets/images/youmakecampuswhole-sq.png" alt="Students on Locust Walk"
+            class="w-full h-full object-cover">
+
+
+          <div
+            class="absolute inset-0 bg-red-700/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center px-6 text-white">
+            <p class="mb-4">
+              Good to have you all back.
+            </p>
+
+            <div class="flex items-center space-x-2">
+              <img src="./src/assets/images/icon-instagram.svg" alt="Instagram" class="w-5 h-5">
+              <span class="font-semibold">@UOFPENN</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="bg-[#011F5B] text-white p-6 flex items-center">
-    <div>
-      <p>
-        When Little Dove sat down mid-walk, her owner, Elizabeth Mauldin, a dermatopathologist at @PennVetSchool, knew something was off. 
-        What followed was a swift, coordinated response from a veterinary team whose skill and care gave the rescue dog a second chance.
-      </p>
-      <div class="mt-4 flex items-center space-x-2">
-        <img src="./src/assets/images/icon-facebook.svg" alt="Twitter" class="w-5 h-5">
-        <span class="font-semibold">@UOFPENN</span>
+      <div class="flex w-full  gap-4 justify-center items-center z-10 md:py-10  ">
+        <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+        <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+        <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+        <span class="size-[12px] rounded-full bg-[#990000]"> </span>
+        <span class="size-[12px] rounded-full bg-[#990000]"> </span>
       </div>
-    </div>
-  </div>
-  <div class="relative group overflow-hidden aspect-square">
-    <img src="./src/assets/images/youmakecampuswhole-sq.png" 
-         alt="Students on Locust Walk" 
-         class="w-full h-full object-cover">
+      <ul class="social__list flex justify-center gap-3 py-5">
 
-
-    <div class="absolute inset-0 bg-red-700/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center px-6 text-white">
-      <p class="mb-4">
-        Good to have you all back.
-      </p>
-
-      <div class="flex items-center space-x-2">
-        <img src="./src/assets/images/icon-instagram.svg" alt="Instagram" class="w-5 h-5">
-        <span class="font-semibold">@UOFPENN</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <div class="flex w-full  gap-4 justify-center items-center z-10 md:py-10  ">
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-      <span class="size-[12px] rounded-full bg-[#990000]"> </span>
-    </div>
-<ul class="social__list flex justify-center gap-3 py-5">
-
-                <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
+        <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
           <a target="_blank" rel="noopener noreferrer" class="social__link">
             <img src="./src/assets/images/icon-instagram.svg" alt="Instagram icon" class="social__icon">
           </a>
         </li>
-        
-                <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
+
+        <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
           <a href="">
-            <img src="./src/assets/images/icon-facebook.svg"  alt="Facebook icon" class="social__icon size-[20px]">
+            <img src="./src/assets/images/icon-facebook.svg" alt="Facebook icon" class="social__icon size-[20px]">
           </a>
         </li>
-        
-                <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
-          <a >
+
+        <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
+          <a>
             <img src="./src/assets/images/icon-twitter.svg" alt="Twitter icon" class="social__icon size-[30px]">
           </a>
         </li>
-        
-          <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
+
+        <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
           <a>
             <img src="./src/assets/images/icon-flickr.svg" alt="Flickr icon" class="social__icon size-[20px]">
           </a>
         </li>
-        
-                <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
-          <a href="http://www.youtube.com/user/univpennsylvania" target="_blank" rel="noopener noreferrer" class="social__link youtube">
+
+        <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
+          <a href="http://www.youtube.com/user/univpennsylvania" target="_blank" rel="noopener noreferrer"
+            class="social__link youtube">
             <img src="./src/assets/images/icon-youtube.svg" alt="YouTube icon" class="social__icon size-[20px]">
           </a>
         </li>
-        
-          <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
-          <a href="https://www.linkedin.com/school/university-of-pennsylvania" target="_blank" rel="noopener noreferrer" class="social__link linkedin">
+
+        <li class="social__item size-[50px] flex items-center justify-center rounded-full border">
+          <a href="https://www.linkedin.com/school/university-of-pennsylvania" target="_blank" rel="noopener noreferrer"
+            class="social__link linkedin">
             <img src="./src/assets/images/icon-linkedin.svg" alt="LinkedIn icon" class="social__icon size-[20px]">
           </a>
         </li>
-        
+
       </ul>
-</section>
+    </section>
 
-<section>
 
-</section>
+
+    <section>
+      <div class="bg-[#011F5B] text-center text-white py-[50px] px-[6%]">
+        <div class="flex flex-col gap-10 justify-center ">
+          <h3 class="text-align-center font-serif text-[28px]">Equal Opportunity and Nondiscrimination at Penn</h3>
+          <p class="text-[17px]">The University of Pennsylvania seeks talented students, faculty, and staff with a wide
+            variety of backgrounds, experiences, and perspectives. The University of Pennsylvania does not discriminate
+            on the basis of race, color, sex, sexual orientation, religion, creed, national origin (including shared
+            ancestry or ethnic characteristics), citizenship status, age, disability, veteran status or any other class
+            protected under applicable federal, state, or local law in the administration of its admissions, financial
+            aid, educational or athletic programs, or other University-administered programs or in its employment
+            practices. Questions or complaints regarding this policy should be directed to the executive director of the
+            Office of Equal Opportunity Programs; Franklin Building, 3451 Walnut Street, Suite 421, Philadelphia, PA
+            19104-6106; or (215) 898-6993.</p>
+          <p class="text-align-center">
+            <a class="btn btn--outline-white  p-[13px] md:p-[25px] rounded-[20px] border  ">Nondiscrimination
+              Statement</a>
+          </p>
+        </div>
+      </div>
+
+    </section>
+<!--Footer-->
+
+    <section class="bg-[url(/src/assets/images/footer-16.png)] bg-cover bg-center bg-blend-overlay bg-blue-950 opacity-90  min-h-[100vh] flex flex-col items-center px-[6%]">
+
+      <div class="grid lg:grid-cols-3 place-items-center place-content-center gap-3 pt-[6%]">
+        <div class="footer__column text-white flex flex-col gap-[17px] items-center text-center">
+        <img src="/src/assets/images/UPenn-logo.svg" alt="University of Pennsylvania" class="footer__logo">
+        <p class="footer__info">Philadelphia, PA 19104</p>
+        <p class="footer__info">Telephone: <a href="tel:2158985000">(215) 898-5000</a>
+        </p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="/about/contact" class="footer__link">Contact Us</a>
+          </li>
+          <li class="footer__item">
+            <a href="s" class="footer__link">Maps</a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">Parking</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="footer__section text-white text-center">
+          <h2 class="footer__section__title text-[24px] font-serif">Navigate</h2>
+          <ul class="footer__list flex flex-col gap-[17px]">
+            <li class="footer__item">
+              <a href="https://www.alumni.upenn.edu" class="footer__link">Alumni</a>
+            </li>
+                        <li class="footer__item">
+              <a href="https://pennathletics.com/" class="footer__link">Athletics</a>
+            </li>
+                        <li class="footer__item">
+              <a href="https://diversity.upenn.edu/" class="footer__link">Belonging</a>
+            </li>
+                        <li class="footer__item">
+              <a href="/life-at-penn/health-and-wellness" class="footer__link">Health Care</a>
+            </li>
+                        <li class="footer__item">
+              <a href="https://www.library.upenn.edu/" class="footer__link">Libraries</a>
+            </li>
+                        <li class="footer__item">
+              <a href="https://platform.onlinelearning.upenn.edu/" class="footer__link">Online Learning</a>
+            </li>
+                        <li class="footer__item">
+              <a href="https://global.upenn.edu/" class="footer__link">Penn Global</a>
+            </li>
+                      </ul>
+        </section>
+        <section class="footer__section text-white w-[390px] h-full ">
+        <div class="flex flex-col  gap-[17px] h-full  items-center text-center">
+        <h2 class="text-[24px] font-serif">Penn's Heritage</h2>
+<p><em>As America’s first university, Penn has a history that dates back to 1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.</em></p>
+<a class="btn btn--outline-white  p-[13px] md:p-[25px] rounded-[20px] border  ">Our History</a>
+  </div>
+
+        </section>
+      </div>
+
+      <div class="flex justify-between mt-40 text-white">
+          <a href="#header" class="flex text-sm font-semibold justify-center items-center gap-3 scroll-smooth">
+            <div class="border-[1px] border-white/25 p-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-up-icon lucide-move-up"><path d="M8 6L12 2L16 6"/><path d="M12 2V22"/></svg>
+            </div>
+            <p>BACK TO TOP</p>
+          </a>
+          <div class="md:flex flex-wrap w-[70%] hidden">
+            <p class="font-bold text-sm uppercase px-6 border-r-[1px] border-white/30 ">Disclaimer</p>
+            <p class="font-bold text-sm uppercase px-6 border-r-[1px] border-white/30 ">Emergency Services</p>
+            <p class="font-bold text-sm uppercase px-6 border-r-[1px] border-white/30 ">Nondiscrimination</p>
+            <p class="font-bold text-sm uppercase px-6 border-r-[1px] border-white/30 ">Privacy Policy</p>
+            <p class="font-bold text-sm uppercase px-6 border-r-[1px] border-white/30 ">Report Accessibility Issues and Get Help</p>
+            <p class="font-bold text-sm uppercase px-6  border-white/30 ">Report Copyright Infringement</p>
+          </div>
+        </div>
+    </section>
   </main>
 </body>
 
