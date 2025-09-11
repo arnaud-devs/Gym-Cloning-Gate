@@ -10,27 +10,89 @@
 </head>
 <body>
 <main>
-  <!--header-->
-  <section class="bg-[url(/src/assets/images/hero.jpeg.jpg)] px-[20px]">
-    <!--first navbar-->
-    <nav class="flex items-center justify-between">
+<div class="relative min-h-[90vh] w-full">
+
+  <section class="absolute inset-0 bg-[url('/src/assets/images/hero.jpeg.jpg')] bg-cover bg-center h-full"></section>
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10 h-full px-[20px]">
+    <nav class="flex items-center justify-between py-4">
       <div>
         <img src="./src/assets/images/UPenn-logo.svg" class="w-[200px] h-[73px]" alt="">
       </div>
+
       <div class="flex items-center gap-4">
-       <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
-       <div>
-        <select name="" id="" class="p-[15px] bg-transparent w-[130px] text-white">
-          <option value="">Resources</option>
-          <option value="">Faculty and stuff</option>
-          <option value="">Parents</option>
-        </select>
-        <a href="" class="bg-[#990000] p-[20px] text-white  font-bold">Give to Penn</a>
-       </div>
+        <!-- Search Icon -->
+        <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+          <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
+        </svg>
+        <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
+        <!-- Dropdown + Button -->
+        <div class="hidden md:flex items-center gap-2">
+          <select name="" id="" class="p-[15px] bg-transparent w-[130px] text-white">
+            <option value="">Resources</option>
+            <option value="">Faculty and staff</option>
+            <option value="">Parents</option>
+          </select>
+          <a href="#" class="bg-[#990000] p-[15px] text-white font-bold">Give to Penn</a>
+        </div>
       </div>
     </nav>
+    <div class="h-[2px] w-full bg-gray-400"></div>
     <!--Second Navbar-->
+    
+    <section class="text-white hidden md:flex justify-end w-full  z-10 mt-2  ">
+      <ul class="flex">
+        <li class="flex justify-between items-center py-[10px] pr-[20px] pl-[20px] ">
+          <div class="flex  items-center">
+            <p class="font-bold capitalize">Academics</p> 
+          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+          </div>
+          <span class="text-gray-400">/</span>
+        </li>
+        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+          <p>Admissions &amp; Aid</p> 
+          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+          <span class="text-gray-400">/</span>
+        </li>
+        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+          <p>Athletics</p> 
+          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+          <span class="text-gray-400">/</span>
+        </li>
+        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+          <p>Research &amp; Innovation</p> 
+          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+          <span class="text-gray-400">/</span>
+        </li>
+        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+          <p>Life at Penn</p> 
+          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+          <span class="text-gray-400">/</span>
+        </li>
+        <li class="flex  items-center">
+          <p>About</p> 
+          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+        </li>
+      </ul>
+    </section>
+
+    <section class="w-full flex h-[50vh] items-end ">
+      <div class="hero__text w-[80%] ">
+        <h3 class="hero__category font-bold text-base text-white">  Health &amp; Medicine</h3>
+        <a href="" class="hero__link">
+          <h1 class=" font-bold md:text-5xl text-white font-serif">
+            Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
+          </h1>
+        </a>
+      </div>
+      </div>
+    </section>
   </section>
+  </div>
+
+  
+  
 </main>
 </body>
 </html>
