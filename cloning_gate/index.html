@@ -268,19 +268,19 @@
 
     <div class="featured-story featured-story--left min-h-[100vh]  relative">
       <picture>
-        <img
-          src="./src/assets/images/padl-lab-technician_1.png"
+        <img src="./src/assets/images/padl-lab-technician_1.png"
           class="featured-story__image w-full object-cover h-[100vh]">
       </picture>
-      <div class="featured-story__contain absolute md:top-[30%] top-[70%] left-[20%] md:left-[2%] w-[60%] md:w-[40%] px-[20px] py-[10px] bg-blue-950 flex">
+      <div
+        class="featured-story__contain absolute lg:top-[30%] lg:mx-0 top-[70%] md:mx-auto lg:left-[2%]  mx-[5%] md:w-[600px] md:left-0 md:right-0  lg:w-[40%] md:px-[20px] py-[10px] bg-blue-950 flex">
         <article class="featured-initiative-card featured-initiative-card--blue text-white border my-[10px] mx-[10px] ">
           <div class="featured-initiative-card__wrap flex  flex-col items-center gap-4">
             <h3 class="featured-initiative-card__category"> Health &amp; Medicine
             </h3>
 
-            <h2 class="featured-initiative-card__title flex">
+            <h2 class="featured-initiative-card__title flex text-center">
 
-              <a href="" class=" text-[34px]">
+              <a href="" class=" text-4xl font-serif">
                 Keeping food safe and animals healthy
               </a>
             </h2>
@@ -292,15 +292,131 @@
 
             </div>
 
-            <a href=""
-              class="btn btn--outline-white-secondary p-[25px] rounded-lg border">LEARN MORE</a>
+            <a href="" class="btn btn--outline-white-secondary p-[25px] rounded-lg border">LEARN MORE</a>
 
           </div>
         </article>
-
-
       </div>
     </div>
+
+    <!--Upcoming Events-->
+
+    <section class="upcoming-events mt-[50vh] lg:mt-10 px-[6%]">
+      <div class="contain flex flex-col  gap-10">
+        <header class="section-header">
+          <h2 class="section-header__title text-4xl font-serif text-[#011F5B]">Upcoming Events</h2>
+        </header>
+
+        <div class="" data-slider="three-across"
+          role="region" aria-label="carousel">
+          <div class=" w-full">
+            <div class=" grid lg:grid-cols-3 w-full  gap-4  md:grid-cols-2">
+              <div class="w-full border-r-2 pr-3 ">
+                <div>
+                  <article class="event-card   relative w-full">
+                    <time class="flex flex-col items-center absolute top-4 z-10 bg-white right-4">
+                      <span class="bg-[#990000] py-1 px-4 text-white ">Sep</span>
+                      <span class="event-card__day">11</span>
+                    </time>
+
+                    <a href="" class="event-card__image-link block relative"
+                      tabindex="0">
+                      <img
+                        src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2024-04/algorithm-health-teaser.jpg?h=6a65c4c3&amp;itok=3XmjijYZ"
+                        alt="Electronic medical records." class="event-card__image ">
+
+                    <div class=" absolute w-[70%] top-[90%]  bg-white z-10 py-[27px]  ">Special Events</div>
+                     </a>
+                    <div class="event-card__content mt-[45px] ">
+                      <h3 class="event-card__title">
+                        <a href="" class="text-[24px] text-[#011F5B] font-serif""
+                          tabindex="0">Cores Day 2025</a>
+                      </h3>
+
+                      <p class="text-[#011F5BAD]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s Hospital of
+                        Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many
+                        biomedical research services and resources available at Penn. This program is an opportunity for
+                        students, faculty, and staff to learn about research core facilities across the University and
+                        speak with core facility personnel. Register to attend.</p>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="slick-slide w-full pr-3 border-r-2 ">
+                <div>
+                  <article class="event-card relative">
+                    <time class="flex flex-col items-center absolute top-4 bg-white right-4 z-10" >
+                      <span class="bg-[#990000] py-1 px-4 text-white">Sep</span>
+                      <span class="event-card__day">11</span>
+                    </time>
+
+                    <a href="#"
+                      class="event-card__image-link relative block" tabindex="-1">
+                      <img
+                        src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2021-01/killingsworth-matt-PNAS-money-study-teaser.jpg?h=6f3285a6&amp;itok=ThqBfzDO"
+                        alt="A blurred hand holding a stack of dollar bills, pushing them toward the camera. "
+                        class="event-card__image">
+
+                    <span class="absolute w-[80%] top-[90%]  block bg-white z-10 py-[27px]">Talks</span>
+                    </a>
+                    <div class="event-card__content mt-[45px]">
+                      <h3 class="event-card__title">
+                        <a href=""
+                          class="event-card__link text-[24px] text-[#011F5B] font-serif" tabindex="-1">Record Borrowing Amid Budget Strains</a>
+                      </h3>
+
+                      <p class="text-[#011F5BAD]">Organized by the Penn Institute for Urban Research, this expert panel—moderated by William
+                        Glasgall, Penn IUR Fellow and Volcker Alliance Public Finance Advisor, and Susan Wachter,
+                        co-director of Penn IUR and Wharton professor—will address the unparalleled boom in state and
+                        local borrowing in the face of federal spending cuts and pressure on budgets. Register to
+                        attend.</p>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="slick-slide pr-3 border-r-2 w-full  hidden lg:inline-block">
+              <div class="slick-slide w-full ">
+                <div>
+                  <article class="event-card relative">
+                    <time class="event-card__date flex flex-col items-center absolute top-4 bg-white right-4 z-10">
+                      <span class="bg-[#990000] py-1 px-4 text-white">Sep</span>
+                      <span class="event-card__day">11</span>
+                    </time>
+
+                    <a href="#"
+                      class="relative block" tabindex="-1">
+                      <img
+                        src="https://penntoday.upenn.edu/sites/default/files/styles/event_large/public/2023-11/wharton-ai-teaser.jpg?h=4b9b3a25&amp;itok=8RDlZrQ6"
+                        alt="Crosswalk with pedestrians overlaid by 1s and 0s." class="event-card__image">
+
+                    <span class="absolute w-[80%] top-[90%]  block bg-white z-10 py-[27px]">Special Events</span>
+                    </a>
+                    <div class="event-card__content mt-[45px]">
+                      <h3 class="event-card__title">
+                        <a href=""
+                          class="event-card__link text-[24px] text-[#011F5B] font-serif" tabindex="-1">Wharton People Analytics: Info Session</a>
+                      </h3>
+
+                      <p class="text-[#011F5BAD]">Hosted by Wharton People Analytics (WPA), this information session will highlight upcoming
+                        programming, research opportunities, and resources available to students this fall.
+                        Philly-themed snacks and Wharton swag will be available. Open to undergraduate and graduate
+                        students. Register to attend.</p>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contain">
+        <a href="https://penntoday.upenn.edu/events" class="link">MORE EVENTS VIA PENN TODAY</a>
+
+      </div>
+    </section>
 
   </main>
 </body>
