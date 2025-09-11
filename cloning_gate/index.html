@@ -1,99 +1,270 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/style.css" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/segoe-pro" rel="stylesheet">
   <script src="https://kit.fontawesome.com/647325a467.js" crossorigin="anonymous"></script>
-                
+
 </head>
+
 <body>
-<main>
-<div class="relative min-h-[90vh] w-full">
+  <main>
+    <div class="relative min-h-[90vh] w-full">
 
-  <section class="absolute inset-0 bg-[url('/src/assets/images/hero.jpeg.jpg')] bg-cover bg-center h-full"></section>
-  <div class="absolute inset-0 bg-black/50"></div>
+      <section class="absolute inset-0 bg-[url('/src/assets/images/hero.jpeg.jpg')] bg-cover bg-center h-full">
+      </section>
+      <div class="absolute inset-0 bg-black/50"></div>
 
-  <div class="relative z-10 h-full px-[20px]">
-    <nav class="flex items-center justify-between py-4">
-      <div>
-        <img src="./src/assets/images/UPenn-logo.svg" class="w-[200px] h-[73px]" alt="">
+      <div class="relative z-10 h-full px-[20px]">
+        <nav class="flex items-center justify-between py-4">
+          <div>
+            <img src="./src/assets/images/UPenn-logo.svg" class="w-[200px] h-[73px]" alt="">
+          </div>
+
+          <div class="flex items-center gap-4">
+            <!-- Search Icon -->
+            <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
+            </svg>
+            <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+            </svg>
+            <!-- Dropdown + Button -->
+            <div class="hidden md:flex items-center gap-2">
+              <select name="" id="" class="p-[15px] bg-transparent w-[130px] text-white">
+                <option value="">Resources</option>
+                <option value="">Faculty and staff</option>
+                <option value="">Parents</option>
+              </select>
+              <a href="#" class="bg-[#990000] p-[15px] text-white font-bold">Give to Penn</a>
+            </div>
+          </div>
+        </nav>
+        <div class="h-[2px] w-full bg-gray-400"></div>
+        <!--Second Navbar-->
+
+        <section class="text-white hidden md:flex justify-end w-full  z-10 mt-2  ">
+          <ul class="flex">
+            <li class="flex justify-between items-center py-[10px] pr-[20px] pl-[20px] ">
+              <div class="flex  items-center">
+                <p class="font-bold capitalize">Academics</p>
+                <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+                </svg>
+              </div>
+              <span class="text-gray-400">/</span>
+            </li>
+            <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+              <p>Admissions &amp; Aid</p>
+              <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+              </svg>
+              <span class="text-gray-400">/</span>
+            </li>
+            <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+              <p>Athletics</p>
+              <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+              </svg>
+              <span class="text-gray-400">/</span>
+            </li>
+            <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+              <p>Research &amp; Innovation</p>
+              <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+              </svg>
+              <span class="text-gray-400">/</span>
+            </li>
+            <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
+              <p>Life at Penn</p>
+              <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+              </svg>
+              <span class="text-gray-400">/</span>
+            </li>
+            <li class="flex  items-center">
+              <p>About</p>
+              <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                <path
+                  d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+              </svg>
+            </li>
+          </ul>
+        </section>
+
+        <section class="w-full flex h-[50vh] items-end ">
+          <div class="hero__text w-[80%] ">
+            <h3 class="hero__category font-bold text-base text-white"> Health &amp; Medicine</h3>
+            <a href="" class="hero__link">
+              <h1 class=" font-bold md:text-5xl text-white font-serif">
+                Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
+              </h1>
+            </a>
+          </div>
       </div>
+      </section>
+      </section>
+    </div>
+    <section class="px-[20px]">
+      <div class="flex justify-between items-center">
+        <h2 class="section-header__title text-4xl text-[#011F5B]">News</h2>
+        <div class="filter border flex px-[17px] py-[11px]">
+          <button type="button" class="filter__toggle flex items-center gap-3">
+            <span class="filter__toggle__text "> Topics
+            </span>
+             <svg class="w-[18px] h-[10px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                  <path
+                    d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z" />
+                </svg>
+          </button>
+          <ul class="" role="list">
+            <li class="filter__item hidden">
+              <button type="button" class="">Featured</button></li>
 
-      <div class="flex items-center gap-4">
-        <!-- Search Icon -->
-        <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-          <path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/>
-        </svg>
-        <svg class="size-[24px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
-        <!-- Dropdown + Button -->
-        <div class="hidden md:flex items-center gap-2">
-          <select name="" id="" class="p-[15px] bg-transparent w-[130px] text-white">
-            <option value="">Resources</option>
-            <option value="">Faculty and staff</option>
-            <option value="">Parents</option>
-          </select>
-          <a href="#" class="bg-[#990000] p-[15px] text-white font-bold">Give to Penn</a>
+            <li class=" hidden">
+              <button type="button" class="filter__trigger" >Arts &amp; Humanities</button>
+            </li>
+            <li class="hidden">
+            <button type="button" class="filter__trigger" >Natural Sciences</button>
+            </li>
+
+            <li class="filter__item hidden">
+              <button type="button" class="filter__trigger">Technology</button>
+            </li>
+
+            <li class="filter__item hidden">
+              <button type="button" class="filter__trigger" aria-expanded="false" data-controls="nf-15"
+                id="filter-nf-15">Health &amp; Medicine</button>
+            </li>
+
+            <li class="filter__item hidden">
+              <button type="button" class="filter__trigger" aria-expanded="false" data-controls="nf-13"
+                id="filter-nf-13">Campus &amp; Community</button>
+            </li>
+
+            <li class="filter__item hidden">
+              <button type="button" class="filter__trigger" aria-expanded="false" data-controls="nf-85"
+                id="filter-nf-85">Global</button>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav>
-    <div class="h-[2px] w-full bg-gray-400"></div>
-    <!--Second Navbar-->
-    
-    <section class="text-white hidden md:flex justify-end w-full  z-10 mt-2  ">
-      <ul class="flex">
-        <li class="flex justify-between items-center py-[10px] pr-[20px] pl-[20px] ">
-          <div class="flex  items-center">
-            <p class="font-bold capitalize">Academics</p> 
-          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
+
+      <div class="news-featured__grid grid md:grid-cols-[1fr_1fr] gap-3 ">
+
+        <div class="news-featured__featured cols-span-2">
+          <article class="article-card article-card--featured text-center ">
+            <picture class="">
+              <img 
+                src="https://penntoday.upenn.edu/sites/default/files/styles/hero/public/2025-09/alzheimers-pollution-teaser_0.jpg?h=4997dc06&amp;itok=Ar97indO"
+                alt="Emissions from a power plant." class="article-card__image">
+            </picture>
+            <a href="https://penntoday.upenn.edu/topic/health-and-medicine" class="text-[#990000]">Health &amp;
+              Medicine</a>
+            <h3 class="article-card__title">
+              <a href="https://penntoday.upenn.edu/news/penn-medicine-exposure-air-pollution-worsens-alzheimers-disease"
+                class="text-[#011F5B] text-4xl font-serif">
+                Exposure to air pollution worsens Alzheimer’s disease
+              </a>
+            </h3>
+          </article>
+        </div>
+
+        <div class="news-featured__articles grid md:grid-cols-2 gap-3 ">
+          <article class="article-card border text-center">
+            <picture class="article-card__figure">
+              <source
+                srcset="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-08/Penn%20White%20Coat-2025-Ceremony__1204.jpg?h=1116cd87&amp;itok=vyo7SHte"
+                media="(min-width: 768px)">
+              <img srcset="/themes/custom/penn_global/assets/img/transparent.png"
+                src="/themes/custom/penn_global/assets/img/transparent.png"
+                class="article-card__image hidden md:flex">
+            </picture>
+            <a href="https://penntoday.upenn.edu/topic/health-and-medicine" class="text-sm text-[#990000]">Health &amp;
+              Medicine</a>
+            <h3 class="article-card__title">
+              <a href="https://penntoday.upenn.edu/news/penn-medicine-vet-dental-white-coat-ceremonies-professional-milestone"
+                class="text-[#011F5B]">
+                White coat ceremonies: A professional milestone
+              </a>
+            </h3>
+          </article>
+          <article class="article-card md:border text-center">
+            <picture class="article-card__figure">
+              <source
+                srcset="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-09/Zhen-Nature%20Nano%20main.jpeg?h=4997dc06&amp;itok=_zlrFV9Q"
+                media="(min-width: 768px)">
+              <img srcset="/themes/custom/penn_global/assets/img/transparent.png"
+                src="/themes/custom/penn_global/assets/img/transparent.png " class="article-card__image hidden md:flex">
+            </picture>
+            <a href="https://penntoday.upenn.edu/topic/technology" class="text-sm text-[#990000]">Technology</a>
+            <h3 class="article-card__title ">
+              <a href="https://penntoday.upenn.edu/news/new-way-guide-light-undeterred" class="text-[#011F5B]">
+                Guiding light towards smarter technology
+              </a>
+            </h3>
+          </article>
+          <article class="article-card border text-center">
+            <picture class="article-card__figure">
+              <source
+                srcset="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-09/kane-charles-social.jpg?h=10d202d3&amp;itok=HUnZDGd_"
+                media="(min-width: 768px)">
+              <img srcset="/themes/custom/penn_global/assets/img/transparent.png"
+                src="/themes/custom/penn_global/assets/img/transparent.png" alt="Charles Kane"
+                class="article-card__image hidden md:flex">
+            </picture>
+            <a href="https://penntoday.upenn.edu/topic/natural-sciences" class="text-sm text-[#990000]">Natural
+              Sciences</a>
+            <h3 class="article-card__title">
+              <a href=""
+                class="text-[#011F5B]">
+                Charles Kane to receive Lorentz Medal
+              </a>
+            </h3>
+          </article>
+          <article class="article-card border text-center">
+            <picture class="article-card__figure">
+              <source
+                srcset="https://penntoday.upenn.edu/sites/default/files/styles/teaser/public/2025-09/breast-cancer-research.jpg?h=56d0ca2e&amp;itok=IFlxBQfO"
+                media="(min-width: 768px)">
+              <img srcset="/themes/custom/penn_global/assets/img/transparent.png"
+                src="/themes/custom/penn_global/assets/img/transparent.png"
+                alt="A mammogram technicial looking at the scans of a mammogram with patient in the background."
+                class="article-card__image hidden md:flex">
+            </picture>
+            <a href="" class="text-sm text-[#990000]">Health &amp;
+              Medicine</a>
+            <h3 class="article-card__title ">
+              <a href="https://penntoday.upenn.edu/news/penn-medicine-pioneering-strategy-may-keep-breast-cancer-coming-back"
+                class="article-card__link text-[#011F5B]">
+                Pioneering strategy may keep breast cancer from coming back
+              </a>
+            </h3>
+          </article>
+
+          <div class="news-featured__links col-span-2 text-center">
+            <a href="https://penntoday.upenn.edu/" class="text-sm text-[#990000]">MORE NEWS VIA PENN TODAY</a>
+
+            <br>
+
           </div>
-          <span class="text-gray-400">/</span>
-        </li>
-        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
-          <p>Admissions &amp; Aid</p> 
-          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
-          <span class="text-gray-400">/</span>
-        </li>
-        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
-          <p>Athletics</p> 
-          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
-          <span class="text-gray-400">/</span>
-        </li>
-        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
-          <p>Research &amp; Innovation</p> 
-          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
-          <span class="text-gray-400">/</span>
-        </li>
-        <li class="flex  items-center py-[10px] pr-[20px] pl-[20px]">
-          <p>Life at Penn</p> 
-          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
-          <span class="text-gray-400">/</span>
-        </li>
-        <li class="flex  items-center">
-          <p>About</p> 
-          <svg class="w-[18px] h-[10px] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M480 224C492.9 224 504.6 231.8 509.6 243.8C514.6 255.8 511.8 269.5 502.7 278.7L342.7 438.7C330.2 451.2 309.9 451.2 297.4 438.7L137.4 278.7C128.2 269.5 125.5 255.8 130.5 243.8C135.5 231.8 147.1 224 160 224L480 224z"/></svg>
-        </li>
-      </ul>
-    </section>
 
-    <section class="w-full flex h-[50vh] items-end ">
-      <div class="hero__text w-[80%] ">
-        <h3 class="hero__category font-bold text-base text-white">  Health &amp; Medicine</h3>
-        <a href="" class="hero__link">
-          <h1 class=" font-bold md:text-5xl text-white font-serif">
-            Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands
-          </h1>
-        </a>
-      </div>
+        </div>
+
       </div>
     </section>
-  </section>
-  </div>
 
-  
-  
-</main>
+  </main>
 </body>
-</html>
 
+</html>
